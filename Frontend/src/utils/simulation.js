@@ -5,7 +5,7 @@
  */
 export const runSimulation = async (promptText) => {
   try {
-    const apiBaseUrl = import.meta.env.VITE_API_URL || "http://localhost:3000";
+    const apiBaseUrl = (import.meta.env.VITE_API_URL || "http://localhost:3000").replace(/\/$/, "");
     const response = await fetch(`${apiBaseUrl}/api/battle`, {
       method: "POST",
       headers: {
