@@ -2,7 +2,7 @@ services:
   - type: web
     name: ai-battle-arena-frontend
     runtime: static
-    rootDirectory: Frontend
+    rootDir: Frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
     envVars:
@@ -12,7 +12,7 @@ services:
   - type: web
     name: ai-battle-arena-backend
     env: node
-    rootDirectory: Backend
+    rootDir: Backend
     buildCommand: npm install && npm run build
     startCommand: node dist/server.js
     envVars:
