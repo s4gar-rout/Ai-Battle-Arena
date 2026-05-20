@@ -10,7 +10,6 @@ const PromptInput = ({ promptInput, setPromptInput, onSubmit, status }) => {
       e.preventDefault();
       onSubmit();
     }
-    console.log(promptInput)
   };
 
   // Auto-resize prompt textarea

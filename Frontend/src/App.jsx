@@ -146,7 +146,7 @@ const App = () => {
 
             {/* Error Message */}
             {errorMessage && (
-              <div className="max-w-4xl mx-auto px-8 mb-8 mt-8">
+              <div className="max-w-4xl mx-auto px-4 sm:px-8 mb-8 mt-8">
                 <div className="p-4.5 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-start gap-3.5 select-text animate-fade-in-up">
                   <AlertTriangle className="w-5 h-5 flex-shrink-0 mt-0.5" />
                   <p className="text-sm leading-relaxed">{errorMessage}</p>
@@ -156,7 +156,7 @@ const App = () => {
 
             {/* Active Prompt Banner */}
             {status !== "idle" && activeClash && activeClash.prompt && (
-              <div className="max-w-4xl mx-auto px-8 mb-8 mt-12">
+              <div className="max-w-4xl mx-auto px-4 sm:px-8 mb-8 mt-12">
                 <div className="p-4 rounded-2xl bg-white/2 border border-white/5 flex gap-3.5 items-center select-text">
                   <Compass className="w-5 h-5 text-[#f59e0b] flex-shrink-0" />
                   <p className="text-[#fdf6e3] text-sm font-medium italic">
@@ -168,7 +168,7 @@ const App = () => {
 
             {/* Competitor Panels Grid */}
             {status !== "idle" && (
-              <div className="max-w-6xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 flex-1 mt-6">
+              <div className="max-w-6xl mx-auto px-4 sm:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-12 flex-1 mt-6">
                 <CompetitorCard
                   modelName="Mistral AI"
                   architecture="Sparse Mixture-of-Experts"

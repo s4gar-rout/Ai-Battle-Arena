@@ -27,7 +27,6 @@ app.post('/api/battle', async (req, res) => {
     if (!problem) {
       return res.status(400).json({ error: "Problem prompt is required" });
     }
-    console.log(`Received battle request for prompt: "${problem}"`);
     const result = await runGraph(problem);
     res.json(result);
   } catch (error: any) {

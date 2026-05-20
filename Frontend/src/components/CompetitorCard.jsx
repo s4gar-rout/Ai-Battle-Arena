@@ -132,7 +132,7 @@ function CompetitorCard({
   const cardBorderClass = isWinner ? "border-[#f59e0b]/20 amber-glow" : "border-white/5 hover:border-white/10";
 
   return (
-    <div className={`warm-glass rounded-[2rem] p-8 flex flex-col min-h-[460px] relative transition-all duration-300 hover:scale-[1.01] ${cardBorderClass}`}>
+    <div className={`warm-glass rounded-[2rem] p-5 sm:p-8 flex flex-col min-h-[460px] relative transition-all duration-300 hover:scale-[1.01] ${cardBorderClass}`}>
       {/* Winner badge – shown only when isWinner is true */}
       {isWinner && (
         <div className="absolute -top-3 right-6 px-4.5 py-1.5 rounded-full bg-[#f59e0b] text-[#12100e] text-[10px] font-extrabold uppercase tracking-widest shadow-xl">

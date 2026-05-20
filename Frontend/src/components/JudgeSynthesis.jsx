@@ -10,9 +10,9 @@ const JudgeSynthesis = ({
 
   if (status === "generating") {
     return (
-      <div className="max-w-4xl mx-auto px-8 mb-20 animate-pulse">
-        <div className="warm-glass rounded-[2.5rem] p-10 overflow-hidden relative">
-          <div className="flex flex-col md:flex-row gap-10 items-center">
+      <div className="max-w-4xl mx-auto px-4 sm:px-8 mb-20 animate-pulse">
+        <div className="warm-glass rounded-[2.5rem] p-6 md:p-10 overflow-hidden relative">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center">
             <div className="flex-shrink-0 relative">
               <div className="w-32 h-32 rounded-full border-2 border-dashed border-[#f59e0b]/20 flex items-center justify-center p-2">
                 <div className="w-full h-full rounded-full bg-[#f59e0b]/5 flex items-center justify-center text-[#f59e0b]/40">
@@ -59,12 +59,12 @@ const JudgeSynthesis = ({
   const percentage2 = Math.min(Math.max(score2 * 10, 0), 100);
 
   return (
-    <div className="max-w-4xl mx-auto px-8 mb-20 transition-all duration-500 animate-fade-in-up">
-      <div className="warm-glass rounded-[2.5rem] p-10 overflow-hidden relative border-[#f59e0b]/10 bg-gradient-to-br from-[#f59e0b]/2 to-transparent">
+    <div className="max-w-4xl mx-auto px-4 sm:px-8 mb-20 transition-all duration-500 animate-fade-in-up">
+      <div className="warm-glass rounded-[2.5rem] p-6 md:p-10 overflow-hidden relative border-[#f59e0b]/10 bg-gradient-to-br from-[#f59e0b]/2 to-transparent">
         {/* Ambient background blur inside the card */}
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-64 h-64 bg-[#f59e0b]/3 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div className="flex flex-col md:flex-row gap-10 items-center relative z-10">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center relative z-10">
           {/* Gavel / Award Circle */}
           <div className="flex-shrink-0 relative">
             <div className="w-32 h-32 rounded-full border-2 border-dashed border-[#f59e0b]/40 flex items-center justify-center p-2 bg-[#12100e]/80">
