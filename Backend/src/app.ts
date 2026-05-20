@@ -17,9 +17,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', async (req, res) => {
-  const result = await runGraph("write an code for factorial function in javascript");
-  res.json(result);
+app.get('/', (req, res) => {
+  res.json({ status: "healthy", message: "AI Battle Arena API is running" });
 });
 
 app.post('/api/battle', async (req, res) => {
