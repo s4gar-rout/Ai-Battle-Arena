@@ -1,7 +1,7 @@
 services:
-  - type: static
+  - type: web
     name: ai-battle-arena-frontend
-    env: static
+    runtime: static
     rootDirectory: Frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
